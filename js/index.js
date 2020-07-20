@@ -24,7 +24,6 @@ function setResult(values){
 
 function getFormattedNumber(numString){
     var num=Number(numString);
-    console.log(num)
     var value=num.toLocaleString("en");
     return value;
 }
@@ -33,3 +32,17 @@ function getReverseFormattedNumber(numString){
     return Number(numString.replace(/,/g,''));
 }
 
+// Handling Operator Clicks
+$('.operator').on('click',function () {
+    console.log($(this).attr('name'));    
+});
+
+// Handling Number Clicks
+$('.number').on('click',function () {
+    
+    var result = getReverseFormattedNumber(getResult());
+    if(result!=NaN){
+        result+=$(this).attr('name');
+        setResult(result);
+    }
+});
