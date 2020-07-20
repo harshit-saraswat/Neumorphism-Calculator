@@ -1,116 +1,143 @@
-/* Removing initial styles */
+/* Initial Element styles */
 * {
   margin: 0;
   padding: 0;
 }
 
-body{
-    position: relative;
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: #dde1e7;
+body {
+  position: relative;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #dde1e7;
+}
+
+h1{
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: auto 0;
 }
 
 /* Containers Styling */
-.container{
-    width: 75%;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 10px;
+.container {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
-.heading-container{
-    text-align: center;
+.heading-container {
+  text-align: center;
 }
 
-.calculator-container{
-    margin-top: 1%;
-    margin-bottom: 1%;
+.calculator-container {
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
-.footer{
-    padding: 1%;
-    text-align: center;
+.footer {
+  padding: 1%;
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #dde1e7;
+}
+
+.footer-text{
     position: absolute;
-    top: 100%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-/* Calculator Body */
-.calculator-body{
-    height: 480px;
-    width: 320px;
-    margin: auto;
-    padding: 2% 1%;
-    border-radius: 10px;
-    background: #dde1e7;
-    box-shadow: -3px -3px 10px #fffffffa, 3px 3px 10px rgba(17,19,23,0.15);
-
-}
-
-/* Calculator Screen */
-.screen-area{
-    width: 100%;
-    height: 20%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: inset -3px -3px 10px #fffffffa, inset 3px 3px 10px rgba(17,19,23,0.15);
-}
-
-.text{
-    margin-right: 20px;
-    font-size: 1.2rem;
-    padding: 2px;
-    height: 30%;
-    width: 90%;
-    color: #A0A0A0;
-    text-align: right;
-}
-
-.result-text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
     font-weight: 700;
-    font-size: 1.5rem;
-    color: #282828;
-}
-
-/* Calculator Buttons */
-.button-container{
-    height: 80%;
-    width: 95%;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.button{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    background-color: #dde1e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -3px -3px 10px #fffffffa, 3px 3px 10px rgba(17,19,23,0.15);
     cursor: pointer;
 }
 
-.empty{
-    visibility: hidden;
+/* Calculator Body */
+.calculator-body {
+  height: 480px;
+  width: 320px;
+  margin: auto;
+  padding: 2% 1%;
+  border-radius: 10px;
+  background: #dde1e7;
+  box-shadow: -3px -3px 10px #fffffffa, 3px 3px 10px rgba(17, 19, 23, 0.15);
+}
+
+/* Calculator Screen */
+.screen-area {
+  width: 100%;
+  height: 20%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: inset -3px -3px 10px #fffffffa,
+    inset 3px 3px 10px rgba(17, 19, 23, 0.15);
+}
+
+.text {
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  padding: 2px;
+  height: 30%;
+  width: 90%;
+  color: #a0a0a0;
+  text-align: right;
+}
+
+.result-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #282828;
+}
+
+/* Calculator Buttons */
+.button-container {
+  height: 80%;
+  width: 95%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #dde1e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px -4px 10px #fffffffa, 4px 4px 10px rgba(17, 19, 23, 0.17);
+  cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.empty {
+  visibility: hidden;
 }
 
 /* Media Query */
 @media screen and (max-width: 450px) {
-    .calculator-body{
-        width: 300px;
-    }
+  .calculator-body {
+    width: 300px;
+  }
 }

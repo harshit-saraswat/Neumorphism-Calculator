@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesom -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>Calculator</title>
 </head>
+
 <body>
     <div class="container">
         <div class="heading-container">
@@ -28,26 +32,30 @@
             <div class="calculator-body">
                 <!-- Screen Container -->
                 <div class="screen-area">
-                        <p class="history-text text">10*8</p>
-                        <p class="result-text text">80</p>
+                    <p class="history-text text">10*8</p>
+                    <p class="result-text text">80</p>
                 </div>
 
                 <!-- Button Container -->
                 <div class="button-container">
                     <div class="row">
                         <div class="col-3">
-                            <div class="button operator">C</div>
+                            <div class="button operator" name="C" style="background-color: #d3dbff;">
+                                <h5>C</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">CE</div>
+                            <div class="button operator" name="CE" style="background-color: #d3dbff;">
+                                <h5>CE</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="%" style="background-color: #1dd3bd;">
                                 <i class="fas fa-percentage"></i>
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="/" style="background-color: #fbd46d;">
                                 <i class="fas fa-divide"></i>
                             </div>
                         </div>
@@ -55,16 +63,22 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <div class="button operator">C</div>
+                            <div class="button operator" name="1">
+                                <h5>1</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">CE</div>
+                            <div class="button operator" name="2">
+                                <h5>2</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">%</div>
+                            <div class="button operator" name="3">
+                                <h5>3</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="*" style="background-color: #ff9595;">
                                 <i class="fas fa-times"></i>
                             </div>
                         </div>
@@ -72,16 +86,22 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <div class="button operator">C</div>
+                            <div class="button operator" name="4">
+                                <h5>4</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">CE</div>
+                            <div class="button operator" name="5">
+                                <h5>5</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">%</div>
+                            <div class="button operator" name="6">
+                                <h5>6</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="-" style="background-color: #f57b51;">
                                 <i class="fas fa-minus"></i>
                             </div>
                         </div>
@@ -89,16 +109,22 @@
 
                     <div class="row">
                         <div class="col-3">
-                            <div class="button operator">C</div>
+                            <div class="button operator" name="7">
+                                <h5>7</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">CE</div>
+                            <div class="button operator" name="8">
+                                <h5>8</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">%</div>
+                            <div class="button operator" name="9">
+                                <h5>9</h5>
+                            </div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="+" style="background-color: #ad62aa;">
                                 <i class="fas fa-plus"></i>
                             </div>
                         </div>
@@ -109,13 +135,15 @@
                             <div class="button empty"></div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">CE</div>
+                            <div class="button operator" name="0">
+                                <h5>0</h5>
+                            </div>
                         </div>
                         <div class="col-3">
                             <div class="button empty"></div>
                         </div>
                         <div class="col-3">
-                            <div class="button operator">
+                            <div class="button operator" name="=" style="background-color: #ffa41b;">
                                 <i class="fas fa-equals"></i>
                             </div>
                         </div>
@@ -126,12 +154,22 @@
     </div>
 
     <footer class="footer">
-        <p>Made By Harshit</p>
+        <p class="footer-text">&copy; Made By <a href="https://github.com/harshit-saraswat">harshit-saraswat</a></p>
     </footer>
 
     <!-- Bootstrap Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Index.js Include -->
+    <script src="js/index.js"></script>
 </body>
+
 </html>
