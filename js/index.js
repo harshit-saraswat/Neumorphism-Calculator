@@ -59,6 +59,14 @@ $('.operator').on('click',function () {
                     setHistory(history);        
                     setResult("");
                 }
+            }else{
+                if(history!=""){
+                    history=history.substr(0,history.length-1)+char;
+                    setHistory(history);        
+                    setResult("");
+                }else if(char=="-"){
+                    setResult("-");
+                }
             }
     }
 });
