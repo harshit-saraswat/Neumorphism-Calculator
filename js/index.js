@@ -16,21 +16,8 @@ function setResult(values){
         $('.result-text').text(values);    
     }else{
         $('.result-text').text(values);
-        // $('.result-text').text(getFormattedNumber(values));
     }
 }
-
-// function getFormattedNumber(numString){
-//     // var num=Number(numString);
-//     var num=parseFloat(numString);
-//     var value=num.toLocaleString("en");
-//     console.log(value)
-//     return value;
-// }
-
-// function getReverseFormattedNumber(numString){
-//     return Number(numString.replace(/,/g,''));
-// }
 
 // Handling Operator Clicks
 $('.operator').on('click',function () {
@@ -73,8 +60,6 @@ $('.operator').on('click',function () {
 
 // Handling Number Clicks
 $('.number').on('click',function () {
-    
-    // var result = getReverseFormattedNumber(getResult());
     var result = getResult();
     if(result!=NaN){
         if(!($(this).attr('name')=='.' && result.includes('.'))){
@@ -82,4 +67,18 @@ $('.number').on('click',function () {
             setResult(result);
         }
     }
+});
+
+// Handling Dark Mode
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+    $('body').toggleClass("dark");
+    $('.footer').toggleClass("dark");
+    $('.calculator-body').toggleClass("dark");
+    $('.calculator-body').toggleClass("darkShadow");
+    $('.screen-area').toggleClass("darkScreenShadow");
+    $('.button').toggleClass("dark");
+    $('.button').toggleClass("darkShadow");
+    $('.text').toggleClass("dark-text");
 });
