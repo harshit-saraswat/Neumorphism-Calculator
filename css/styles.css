@@ -210,4 +210,13 @@ h5 {
   .calculator-body {
     width: 300px;
   }
+  body{
+    height: 90vh;
+  }
+
+  #darkToggle{
+    top: 92vh;
+    right: 20px;
+    z-index: 10;
+  }
 }
